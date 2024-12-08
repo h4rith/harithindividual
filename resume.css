@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Base font size */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #EF1A2D;
+    color: rgb(254, 254, 5);
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.75rem; /* 28px */
+}
+
+nav {
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+main h2 {
+    border-bottom: 2px solid #EF1A2D;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: #EF1A2D;
+    font-size: 1.5rem; /* 24px */
+}
+
+main p, main ul, main li {
+    margin-bottom: 1em;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Table Styling */
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.biodata-table th, .biodata-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.biodata-table th {
+    background: #EF1A2D;
+    color: white;
+    font-weight: bold;
+}
+
+.biodata-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.biodata-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Home Page */
+.home-welcome {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.home-welcome h2 {
+    font-size: 2rem; /* 32px */
+    color: #0056b3;
+}
+
+.home-welcome p {
+    font-size: 1rem; /* Matches body size */
+}
+
+/* Experience Page */
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.experience-table th, .experience-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.experience-table th {
+    background: #EF1A2D;
+    color: white;
+}
+
+.experience-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Education Page */
+.education-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.education-item {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #EF1A2D;
+    border-radius: 5px;
+}
+
+.education-item h3 {
+    margin: 0 0 10px;
+    color: #EF1A2D;
+}
+
+/* Family Page */
+.family-section {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.family-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.family-section img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.family-description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Gallery Page */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%; /* Fully responsive */
+    max-width: 200px; /* Limit max size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .gallery img {
+        max-width: 100%; /* Images take full width */
+    }
+
+    .family-section img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .home-welcome h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-welcome p {
+        font-size: 1rem;
+    }
+}
